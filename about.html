@@ -37,13 +37,55 @@
 
             </ul>
             <button id="btnAppointment" class="btn btn-outline-success">Consult For Free</button>
-            <button class="btn btn-outline-light mx-2">Login</button>
+            <button class="btn btn-outline-light mx-2" data-toggle="modal" data-target="#loginModal">Login</button>
 
         </div>
     </nav>
 
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title" id="loginModalTitle">Welcome to One Health Portal.</h5>
+                        <h6 class="modal-title" id="loginModalTitle">One account for all your medical need!</h6>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="px-4 py-3">
+                        <div class="form-group">
+                            <label for="loginEmail">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="email@example.com"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Password"
+                                required>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberCheck">
+                            <label class="form-check-label" for="rememberCheck">
+                                Remember me
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">New around here? Sign up</a>
+                    <a class="dropdown-item" href="#">Forgot password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <h1>About coming soon.</h1>
+
+    <h1>About us coming soon.</h1>
 
 
     <footer class="footer my-4 bg-dark">

@@ -37,10 +37,57 @@
 
             </ul>
             <button id="btnAppointment" class="btn btn-outline-success">Consult For Free</button>
-            <button class="btn btn-outline-light mx-2">Login</button>
+            <button class="btn btn-outline-light mx-2" data-toggle="modal" data-target="#loginModal">Login</button>
 
         </div>
     </nav>
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+    Launch demo modal
+  </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title" id="loginModalTitle">Welcome to One Health Portal.</h5>
+                        <h6 class="modal-title" id="loginModalTitle">One account for all your medical need!</h6>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="px-4 py-3">
+                        <div class="form-group">
+                            <label for="loginEmail">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="email@example.com"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Password"
+                                required>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberCheck">
+                            <label class="form-check-label" for="rememberCheck">
+                                Remember me
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">New around here? Sign up</a>
+                    <a class="dropdown-item" href="#">Forgot password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div id="myCarousel" class="carousel-fade carousel slide " data-ride="carousel">
@@ -73,7 +120,8 @@
                             our team will connect you in 12 hours and set-up your appointment with the best doctor
                             available.<br />Please note that these details need to be filled correctly because our
                             doctor will connect you through these details only.</p>
-                        <p><a class="btn btn-lg btn-primary" href="/NirogyaSaathi/appointment.html" role="button">Consult For Free</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="/NirogyaSaathi/appointment.html"
+                                role="button">Consult For Free</a></p>
                     </div>
                 </div>
             </div>
@@ -121,7 +169,14 @@
                 <div class="row featurette d-flex justify-content-center align-items-center my-2">
                     <div class="col-md-7">
                         <h2 class="featurette-heading">Orthopedic trauma during ongoing COVID 19 pandemic.</h2>
-                        <p class="lead">Covid-19 pandemic has shown its massive impact on almost all aspects of human existence including social, economic and healthcare. Trauma victims are one such group of patients who have fallen prey to this worldwide crisis. Paucity of literature, lack of specific guidelines and prevailing panic has created new hurdles for those managing these patients. We performed this observational of first two months of this pandemic, to assess its impact on patient’s attendance and management, in view of novel challenges imposed due to pandemic scenario. Also, we attempted to formulate a pathway to guide management of Orthopaedic trauma patients.</p>
+                        <p class="lead">Covid-19 pandemic has shown its massive impact on almost all aspects of human
+                            existence including social, economic and healthcare. Trauma victims are one such group of
+                            patients who have fallen prey to this worldwide crisis. Paucity of literature, lack of
+                            specific guidelines and prevailing panic has created new hurdles for those managing these
+                            patients. We performed this observational of first two months of this pandemic, to assess
+                            its impact on patient’s attendance and management, in view of novel challenges imposed due
+                            to pandemic scenario. Also, we attempted to formulate a pathway to guide management of
+                            Orthopaedic trauma patients.</p>
                     </div>
                     <div class="col-md-5">
                         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
@@ -131,8 +186,13 @@
 
                 <div class="row featurette d-flex justify-content-center align-items-center my-2">
                     <div class="col-md-7 order-md-2">
-                        <h2 class="featurette-heading">A Rare Case of Ipsilateral “Floating Ileum” with Floating Hip and Floating Knee.</h2>
-                        <p class="lead">In the light of available data, it can be safely concluded that floating ileum, floating hip and floating knee injuries are not simple skeletal injuries but often a part of polytrauma with other significant associated systemic injuries. The clinical outcome of these patients not only depend on proactive and optimum management of tibial, femoral and ileuml fractures but also on the management of associated injuries.</p>
+                        <h2 class="featurette-heading">A Rare Case of Ipsilateral “Floating Ileum” with Floating Hip and
+                            Floating Knee.</h2>
+                        <p class="lead">In the light of available data, it can be safely concluded that floating ileum,
+                            floating hip and floating knee injuries are not simple skeletal injuries but often a part of
+                            polytrauma with other significant associated systemic injuries. The clinical outcome of
+                            these patients not only depend on proactive and optimum management of tibial, femoral and
+                            ileuml fractures but also on the management of associated injuries.</p>
                     </div>
                     <div class="col-md-5">
                         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
